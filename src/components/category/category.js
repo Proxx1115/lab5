@@ -1,6 +1,6 @@
 import React from "react";
 
 const Category = (props) => {
-  return <div>HI</div>;
+  console.log("HI");
 };
 export default Category;

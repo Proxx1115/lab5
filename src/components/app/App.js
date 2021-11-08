@@ -1,7 +1,9 @@
 import "./App.css";
 import Contents from "../contents/index.jsx";
 import React, { Component } from "react";
+import { BrowserRouter, Routes, HashRouter } from "react-router-dom";
 import Header from "../header";
+import Category from "../category/category";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -72,10 +74,15 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="app">
-        <Header prop={this.state.data} />
-        <Contents prop={this.state.data} />
-      </div>
+      <BrowserRouter>
+        <div className="app">
+          <Header prop={this.state.data} />
+          <Contents prop={this.state.data} />
+          <div>
+            <Routes path="/category" Component={Category} />
+          </div>
+        </div>
+      </BrowserRouter>
     );
   }
 }
