@@ -16,6 +16,19 @@ class App extends Component {
     };
   }
   render() {
+    function getUnique(array) {
+      var uniqueArray = [];
+      let i;
+      for (i = 0; i < array.length; i++) {
+        if (uniqueArray.indexOf(array[i]) === -1) {
+          uniqueArray.push(array[i]);
+        }
+      }
+      return uniqueArray;
+    }
+    let cats = [];
+    cats = this.state.data.map((el) => el.type);
+    cats = getUnique(cats);
     return (
       <HashRouter>
         <div className="app">
@@ -27,86 +40,25 @@ class App extends Component {
               exact
               element={<Contents prop={this.state.data} />}
             />
-            <Route
-              path="/Finance"
-              exact
-              element={<Category prop={this.state.data} />}
-            />
-            <Route
-              path="/Top"
-              exact
-              element={<Category prop={this.state.data} />}
-            />
-            <Route
-              path="/Sport"
-              exact
-              element={<Category prop={this.state.data} />}
-            />
-            <Route
-              path="/Art"
-              exact
-              element={<Category prop={this.state.data} />}
-            />
-            <Route
-              path="/Finance/1"
-              exact
-              element={<More prop={this.state.data} />}
-            />
-            <Route
-              path="/Finance/2"
-              exact
-              element={<More prop={this.state.data} />}
-            />
-            <Route
-              path="/Finance/3"
-              exact
-              element={<More prop={this.state.data} />}
-            />
-            <Route
-              path="/Top/1"
-              exact
-              element={<More prop={this.state.data} />}
-            />
-            <Route
-              path="/Top/2"
-              exact
-              element={<More prop={this.state.data} />}
-            />
-            <Route
-              path="/Top/3"
-              exact
-              element={<More prop={this.state.data} />}
-            />
-            <Route
-              path="/Sport/1"
-              exact
-              element={<More prop={this.state.data} />}
-            />
-            <Route
-              path="/Sport/2"
-              exact
-              element={<More prop={this.state.data} />}
-            />
-            <Route
-              path="/Sport/3"
-              exact
-              element={<More prop={this.state.data} />}
-            />
-            <Route
-              path="/Art/1"
-              exact
-              element={<More prop={this.state.data} />}
-            />
-            <Route
-              path="/Art/2"
-              exact
-              element={<More prop={this.state.data} />}
-            />
-            <Route
-              path="/Art/3"
-              exact
-              element={<More prop={this.state.data} />}
-            />
+            {cats.map((el) => {
+              return (
+                <Route
+                  path={`/${el}`}
+                  exact
+                  element={<Category prop={this.state.data} />}
+                />
+              );
+            })}
+            {this.state.data.map((el) => {
+              console.log(`/${el.type}/${el.id}`);
+              return (
+                <Route
+                  path={`/${el.type}/${el.id}`}
+                  exact
+                  element={<More prop={this.state.data} />}
+                />
+              );
+            })}
           </Routes>
           <Footer />
         </div>
@@ -114,5 +66,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
