@@ -1,7 +1,6 @@
 import React from "react";
 import Info from "../info";
 import "./style.css";
-import { Routes, Route, HashRouter } from "react-router-dom";
 const More = (props) => {
   function findLink() {
     let link = "";

@@ -7,6 +7,7 @@ import Data from "../data";
 import Header from "../header";
 import Home from "../home";
 import Category from "../category/Category";
+import GetUnique from "../getUnique";
 import Footer from "../footer";
 class App extends Component {
   constructor(props) {
@@ -16,19 +17,9 @@ class App extends Component {
     };
   }
   render() {
-    function getUnique(array) {
-      var uniqueArray = [];
-      let i;
-      for (i = 0; i < array.length; i++) {
-        if (uniqueArray.indexOf(array[i]) === -1) {
-          uniqueArray.push(array[i]);
-        }
-      }
-      return uniqueArray;
-    }
     let cats = [];
     cats = this.state.data.map((el) => el.type);
-    cats = getUnique(cats);
+    cats = GetUnique(cats);
     return (
       <HashRouter>
         <div className="app">
