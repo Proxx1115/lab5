@@ -1,6 +1,5 @@
 import React from "react";
 import Menu from "../menu";
-import Category from "../category/category";
 import "./style.css";
 function getUnique(array) {
   var uniqueArray = [];
@@ -16,7 +15,6 @@ function getUnique(array) {
 const Header = (props) => {
   let types = props.prop.map((el) => el.type);
   types = getUnique(types);
-  types.unshift("Home");
   return (
     <div className="header">
       {types.map((el) => (
