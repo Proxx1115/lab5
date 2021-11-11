@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import { Routes, Route, HashRouter } from "react-router-dom";
 import More from "../more";
 import Data from "../data";
+import Login from "../login";
 import Header from "../header";
 import Home from "../home";
 import Category from "../category/Category";
@@ -23,35 +24,38 @@ class App extends Component {
     return (
       <HashRouter>
         <div className="app">
-          <Home />
-          <Header prop={this.state.data} />
-          <Routes>
-            <Route
-              path="/"
-              exact
-              element={<Contents prop={this.state.data} />}
-            />
-            {cats.map((el) => {
-              return (
-                <Route
-                  path={`/${el}`}
-                  exact
-                  element={<Category prop={this.state.data} />}
-                />
-              );
-            })}
-            {this.state.data.map((el) => {
-              console.log(`/${el.type}/${el.id}`);
-              return (
-                <Route
-                  path={`/${el.type}/${el.id}`}
-                  exact
-                  element={<More prop={this.state.data} />}
-                />
-              );
-            })}
-          </Routes>
-          <Footer />
+          <div className="container">
+            <Login />
+            <Home />
+            <Header prop={this.state.data} />
+            <Routes>
+              <Route
+                path="/"
+                exact
+                element={<Contents prop={this.state.data} />}
+              />
+              {cats.map((el) => {
+                return (
+                  <Route
+                    path={`/${el}`}
+                    exact
+                    element={<Category prop={this.state.data} />}
+                  />
+                );
+              })}
+              {this.state.data.map((el) => {
+                console.log(`/${el.type}/${el.id}`);
+                return (
+                  <Route
+                    path={`/${el.type}/${el.id}`}
+                    exact
+                    element={<More prop={this.state.data} />}
+                  />
+                );
+              })}
+            </Routes>
+            <Footer />
+          </div>
         </div>
       </HashRouter>
     );

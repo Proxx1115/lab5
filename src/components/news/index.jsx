@@ -7,7 +7,7 @@ export const News = (props) => {
     <div className="news-cont">
       <Link to={link}>
         <div className="news">
-          <img src={props.prop.img} alt="zurag" />
+          <img className="image" src={props.prop.img} alt="zurag" />
           <h2 className="text">
             <div className="type">{props.prop.type}</div>
             <br />
