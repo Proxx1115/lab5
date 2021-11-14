@@ -4,7 +4,7 @@ import "./style.css";
 const Home = () => {
   return (
     <Link to="/">
-      <i class="fas fa-home fa-3x"></i>
+      <i class="fas fa-home fa-2x"></i>
     </Link>
   );
 };

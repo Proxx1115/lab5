@@ -1,0 +1,23 @@
+.info-cont {
+  width: 100vw;
+}
+.info-cont .zurag {
+  display: flex;
+  justify-content: center;
+}
+.info-cont .zurag img {
+  width: 35%;
+  margin-bottom: 2rem;
+}
+.info-cont .text {
+  text-align: left;
+  width: 50%;
+  margin: auto;
+}
+.info-type {
+  display: inline;
+  background: steelblue;
+  margin-bottom: 1rem;
+  color: #fff;
+  padding: 1rem;
+}

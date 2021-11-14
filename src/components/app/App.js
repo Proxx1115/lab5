@@ -1,12 +1,13 @@
 import "./App.css";
 import Contents from "../contents/index.jsx";
 import React, { Component } from "react";
-import { Routes, Route, HashRouter } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import More from "../more";
 import Data from "../data";
 import Login from "../login";
 import Header from "../header";
 import Home from "../home";
+import AddNews from "../addNews";
 import Category from "../category/Category";
 import GetUnique from "../getUnique";
 import Footer from "../footer";
@@ -26,8 +27,10 @@ class App extends Component {
         <div className="app">
           <div className="container">
             <Login />
-            <Home />
-            <Header prop={this.state.data} />
+            <div className="menuu">
+              <Home />
+              <Header className="head" prop={this.state.data} />
+            </div>
             <Routes>
               <Route
                 path="/"
@@ -53,6 +56,7 @@ class App extends Component {
                   />
                 );
               })}
+              <Route path="/Addnews" element={<AddNews />} />
             </Routes>
             <Footer />
           </div>
