@@ -8,11 +8,32 @@ export const News = (props) => {
       <Link to={link}>
         <div className="news">
           <img className="image" src={props.prop.img} alt="zurag" />
-          <h2 className="text">
-            <div className="type">{props.prop.type}</div>
-            <br />
+          <div className="text-cont">
             <div className="title">{props.prop.name}</div>
-          </h2>
+            <div className="type">{props.prop.type}</div>
+            <div className="more-news">
+              <div className="insideMoreNews">{props.prop.more}</div>
+            </div>
+            <div className="news-footer">
+              <div className="news-more">
+                <img
+                  className="heart"
+                  src="https://www.yolo.mn/stat/app/img/redheart.png"
+                  alt=""
+                />
+                <div className="number">217</div>
+                <img
+                  className="eye"
+                  src="https://www.yolo.mn/stat/app/img/eye.png"
+                  alt=""
+                />
+                <div className="number">4059</div>
+              </div>
+              <div className="when">
+                <p>ӨЧИГДӨР</p>
+              </div>
+            </div>
+          </div>
         </div>
       </Link>
     </div>

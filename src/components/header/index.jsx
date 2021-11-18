@@ -11,6 +11,8 @@ const Header = (props) => {
       {types.map((el) => (
         <Menu prop={el} />
       ))}
+      <i class="fas fa-search search"></i>
+      <i class="fas fa-sign-out-alt log-out"></i>
     </div>
   );
 };

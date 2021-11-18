@@ -1,4 +1,28 @@
-i {
-  color: black;
-  margin: 1rem;
+.logo {
+  padding: 15px 10px;
+  width: 110px;
+  height: 50px;
+}
+.logo-text {
+  font-size: 14px;
+  padding: 0px 0px 0px 20px;
+  margin-top: -0.5rem;
+  width: 145px;
+}
+.lg {
+  line-height: 0;
+}
+@media (max-width: 1000px) {
+  .logo {
+    padding: 15px 10px;
+    width: 70px;
+    height: 31px;
+  }
+}
+@media (max-width: 800px) {
+  .logo {
+    padding: 15px 10px;
+    width: 110px;
+    height: 50px;
+  }
 }

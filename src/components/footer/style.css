@@ -1,8 +1,16 @@
 .footer {
-  background: #333;
-  color: #fff;
-  padding: 1rem;
-  margin-top: 4rem;
   width: 80%;
-  text-align: center;
+  text-align: right;
+  font-family: "Roboto Condensed", sans-serif;
+
+  padding: 5px 10px;
+  margin: 10px;
+}
+.footer p {
+  display: inline;
+  font-size: 17px;
+  transition: all 0.3s ease-in;
+}
+.footer p:hover {
+  background: #f8e71c;
 }

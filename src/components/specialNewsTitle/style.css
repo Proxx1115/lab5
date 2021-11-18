@@ -1,0 +1,48 @@
+.special {
+  padding: 1rem 0 0 0;
+  font-size: 20px;
+  font-family: "Roboto Condensed", "Sans-serif";
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  align-items: center;
+}
+.icons i {
+  color: #333333;
+  padding: 0;
+  font-size: 14px;
+  border: 1px solid;
+  padding: 5px 10px;
+  margin-right: 10px;
+  transition: all 0.4s ease-out;
+}
+.icons i:hover {
+  color: #fff;
+  background: #000000;
+}
+.icons {
+  margin: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.special p {
+  padding-left: 10px;
+  border-left: 4px solid #f8e71c;
+}
+
+@media (max-width: 1000px) {
+  .special {
+    width: 80%;
+    margin: auto;
+    padding-right: 3rem;
+    box-sizing: border-box;
+  }
+  .icons {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}

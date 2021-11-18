@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import More from "../more";
 import Data from "../data";
-import Login from "../login";
+import SpecialNewsTitle from "../specialNewsTitle";
 import Header from "../header";
 import Home from "../home";
 import AddNews from "../addNews";
@@ -26,39 +26,41 @@ class App extends Component {
       <HashRouter>
         <div className="app">
           <div className="container">
-            <Login />
             <div className="menuu">
               <Home />
               <Header className="head" prop={this.state.data} />
             </div>
-            <Routes>
-              <Route
-                path="/"
-                exact
-                element={<Contents prop={this.state.data} />}
-              />
-              {cats.map((el) => {
-                return (
-                  <Route
-                    path={`/${el}`}
-                    exact
-                    element={<Category prop={this.state.data} />}
-                  />
-                );
-              })}
-              {this.state.data.map((el) => {
-                console.log(`/${el.type}/${el.id}`);
-                return (
-                  <Route
-                    path={`/${el.type}/${el.id}`}
-                    exact
-                    element={<More prop={this.state.data} />}
-                  />
-                );
-              })}
-              <Route path="/Addnews" element={<AddNews />} />
-            </Routes>
-            <Footer />
+            <div className="real-contents">
+              <SpecialNewsTitle />
+              <Routes>
+                <Route
+                  path="/"
+                  exact
+                  element={<Contents prop={this.state.data} />}
+                />
+                {cats.map((el) => {
+                  return (
+                    <Route
+                      path={`/${el}`}
+                      exact
+                      element={<Category prop={this.state.data} />}
+                    />
+                  );
+                })}
+                {this.state.data.map((el) => {
+                  console.log(`/${el.type}/${el.id}`);
+                  return (
+                    <Route
+                      path={`/${el.type}/${el.id}`}
+                      exact
+                      element={<More prop={this.state.data} />}
+                    />
+                  );
+                })}
+                <Route path="/Addnews" element={<AddNews />} />
+              </Routes>
+              <Footer />
+            </div>
           </div>
         </div>
       </HashRouter>

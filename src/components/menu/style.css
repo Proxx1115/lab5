@@ -1,11 +1,20 @@
 .menu {
-  padding: 1rem;
+  padding: 38px 11px 10px;
   cursor: pointer;
   font-size: 1.5rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.menu a:hover {
+  color: #f8e71c;
 }
 a {
-  color: black;
-  font-weight: 700;
+  font-size: 1rem;
+  color: #333333;
+  transition: all 0.3s ease-in;
   text-decoration: none;
+}
+@media (max-width: 1000px) {
+  .menu {
+    display: flex;
+  }
 }

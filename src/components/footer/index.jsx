@@ -4,7 +4,7 @@ import "./style.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <p>All rights served</p>
+      <p>YOLO TEAM</p>
     </div>
   );
 };
