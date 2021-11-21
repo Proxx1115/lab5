@@ -1,5 +1,5 @@
 .info-cont {
-  width: 100vw;
+  width: 60vw;
   height: auto;
 }
 .info-cont .zurag {
@@ -7,19 +7,81 @@
   justify-content: center;
 }
 .info-cont .zurag img {
-  width: 35%;
-  margin-bottom: 2rem;
+  width: 100%;
+  height: 576px;
+  margin-left: 1rem;
+}
+.author-cont {
+  display: flex;
+  justify-content: space-between;
+}
+.author {
+  margin-top: -0.6rem;
+  line-height: 0.6;
+  font-size: 12px;
+}
+.author span {
+  color: #3fb9ee;
+  font-size: 15px;
+}
+.link {
+  display: flex;
+  color: #fff;
+}
+.link p {
+  background: #4267b2;
+  border-radius: 3px;
+  padding: 0 0.5rem;
+  font-size: 12px;
+}
+.link .thumb {
+  margin-right: 0.5rem;
 }
 .info-cont .text {
-  text-align: left;
-  width: 50%;
+  text-align: justify;
+  width: 100%;
+  padding: 0 1rem;
   margin: auto;
   height: auto;
-}
-.info-type {
-  display: inline;
-  background: steelblue;
   margin-bottom: 1rem;
-  color: #fff;
-  padding: 1rem;
+}
+.info-name {
+  color: #333333;
+  font-size: 28px;
+  margin: 20px 0 10px;
+  border-bottom: 1px solid;
+  padding-bottom: 0.7rem;
+}
+@media (max-width: 1200px) {
+  .info-cont {
+    width: 80vw;
+    height: auto;
+  }
+  .info-cont .zurag img {
+    width: 100%;
+    height: 500px;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 800px) {
+  .info-cont {
+    width: 100vw;
+    height: auto;
+  }
+  .info-cont .zurag img {
+    width: 100%;
+    height: 400px;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .info-cont {
+    width: 90vw;
+    height: auto;
+  }
+  .info-cont .zurag img {
+    width: 100%;
+    height: 300px;
+    margin-left: 1rem;
+  }
 }

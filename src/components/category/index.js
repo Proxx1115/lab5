@@ -1,6 +1,5 @@
 import React from "react";
 import Contents from "../contents";
-import "./style.css";
 const Category = (property) => {
   let temp = window.location.hash;
   let type = "";

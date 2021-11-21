@@ -7,8 +7,7 @@ import Data from "../data";
 import SpecialNewsTitle from "../specialNewsTitle";
 import Header from "../header";
 import Home from "../home";
-import AddNews from "../addNews";
-import Category from "../category/Category";
+import Category from "../category";
 import GetUnique from "../getUnique";
 import Footer from "../footer";
 class App extends Component {
@@ -18,6 +17,7 @@ class App extends Component {
       data: Data(),
     };
   }
+
   render() {
     let cats = [];
     cats = this.state.data.map((el) => el.type);
@@ -48,7 +48,6 @@ class App extends Component {
                   );
                 })}
                 {this.state.data.map((el) => {
-                  console.log(`/${el.type}/${el.id}`);
                   return (
                     <Route
                       path={`/${el.type}/${el.id}`}
@@ -57,7 +56,6 @@ class App extends Component {
                     />
                   );
                 })}
-                <Route path="/Addnews" element={<AddNews />} />
               </Routes>
               <Footer />
             </div>

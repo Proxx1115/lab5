@@ -1,10 +1,15 @@
 .news {
+  position: relative;
   display: flex;
   font-family: "Roboto Condensed", sans-serif;
   flex-direction: column;
-  margin: 1rem;
   overflow: hidden;
-  height: 100%;
+  height: 490px;
+  box-shadow: 1px 1px 3px 0.1px #9b9b9b, -1px 1px 3px 0.1px #9b9b9b;
+}
+
+.largenews {
+  height: 700px;
 }
 div.insideMoreNews {
   height: 55px;
@@ -14,17 +19,35 @@ div.insideMoreNews {
   color: #9b9b9b;
   margin-top: 0.3rem;
 }
-.news-cont {
-  margin-bottom: 1rem;
-}
 .text-cont {
-  box-shadow: 2px 2px 6px 1px #9b9b9b, -2px 2px 6px 1px #9b9b9b;
   height: 250px;
   padding: 9px;
 }
 .image {
   width: 100%;
-  height: 50%;
+  height: 230px;
+}
+.hoverInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  background: #ccc;
+  top: 39%;
+  left: 0;
+  width: 100%;
+}
+.hoverInfo i {
+  font-size: 20px;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 33.3%;
+  transition: all 0.3s ease-out;
+}
+.hoverInfo i:hover {
+  background: #f8e71c;
+}
+.image:hover .hover {
 }
 .title {
   margin-top: 10px;
@@ -80,11 +103,27 @@ div.insideMoreNews {
     width: 100%;
     height: 35%;
   }
+  .hoverInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    background: #ccc;
+    top: 26%;
+    left: 0;
+    width: 100%;
+  }
+  .news {
+    height: 400px;
+  }
 }
 
 @media (max-width: 650px) {
   .image {
     width: 100%;
     height: 30%;
+  }
+  .news {
+    height: 380px;
   }
 }

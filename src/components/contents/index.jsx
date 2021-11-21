@@ -4,8 +4,8 @@ import "./style.css";
 const Contents = (props) => {
   return (
     <div className="main-content">
-      {props.prop.map((el) => (
-        <News prop={el} />
+      {props.prop.map((el, ind) => (
+        <News prop={el} index={ind} />
       ))}
     </div>
   );

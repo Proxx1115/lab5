@@ -17,11 +17,13 @@ html {
   overflow: hidden;
 }
 .menuu {
+  z-index: 500;
   position: fixed;
   top: 0;
   background: #fff;
   width: 1200px;
   display: flex;
+  padding: 0 2rem;
   justify-content: space-between;
 }
 @media (max-width: 1200px) {

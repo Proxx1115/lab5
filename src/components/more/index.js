@@ -1,6 +1,5 @@
 import React from "react";
 import Info from "../info";
-import "./style.css";
 const More = (props) => {
   function findLink() {
     let link = "";

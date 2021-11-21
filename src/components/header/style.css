@@ -1,11 +1,20 @@
 .header {
   display: flex;
 }
+.mobile-menu {
+  display: none;
+}
 i {
   padding: 38px 11px 10px;
   cursor: pointer;
   font-size: 1.5rem;
   font-family: "Roboto Condensed", sans-serif;
+}
+.showhead {
+  display: block;
+}
+.srch {
+  display: none;
 }
 .search {
   color: #f8e71c;
@@ -26,6 +35,7 @@ i {
     font-size: 1rem;
     font-family: "Roboto Condensed", sans-serif;
   }
+
   .search {
     display: none;
   }
@@ -33,8 +43,27 @@ i {
     display: none;
   }
 }
-@media (max-width: 800px) {
+
+@media (max-width: 850px) {
   .header {
     display: none;
+  }
+  .mbl {
+    display: flex;
+  }
+  .srch {
+    display: block;
+    color: #f8e71c;
+    font-size: 24px;
+    padding: 45px 11px 10px;
+    margin-top: -1rem;
+  }
+  .mobile-menu {
+    cursor: pointer;
+    margin-top: 1.5rem;
+    display: block;
+    width: 36px;
+    height: 33px;
+    margin-left: 1rem;
   }
 }
