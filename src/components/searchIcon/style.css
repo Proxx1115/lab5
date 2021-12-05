@@ -1,0 +1,11 @@
+.search {
+  color: #f8e71c;
+  margin-top: 2.8rem;
+  margin-right: 2rem;
+}
+@media (max-width: 400px) {
+  .search {
+    color: #f8e71c;
+    margin: 2.8rem 0;
+  }
+}

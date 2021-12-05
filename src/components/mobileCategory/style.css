@@ -1,0 +1,13 @@
+.m-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  width: 20%;
+  margin: auto;
+}
+@media (min-width: 1000px) {
+  .m-header {
+    display: none;
+  }
+}

@@ -10,7 +10,7 @@ const Info = (props) => {
             <p>
               <span>Б.Баяржаргал</span> | YOLO.MN
             </p>
-            <p>2021-11-15</p>
+            <p className="nn">2021-11-15</p>
           </div>
           <div className="link">
             <p className="thumb">👍Like 21</p>

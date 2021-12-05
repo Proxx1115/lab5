@@ -45,4 +45,15 @@
     display: flex;
     justify-content: space-between;
   }
+  .icons i {
+    padding: 3px 6px;
+  }
+}
+@media (max-width: 500px) {
+  .special p {
+    font-size: 13px;
+  }
+  .icons i {
+    padding: 2px 4px;
+  }
 }

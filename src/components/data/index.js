@@ -1,7 +1,9 @@
-const Data = (props) => {
+const Data = () => {
   let dt = [
     {
       id: 5,
+      like: 25,
+      views: 32,
       name: "Амьтдад чин сэтгэлээсээ хайртай хүмүүст тохирох мэргэжлүүд",
       img: "https://www.yolo.mn/img/images/ck/2021/11/11/54802989269371.5defb19b2c582-115511-2081107088.gif",
       type: "EDUCATION",
@@ -15,6 +17,8 @@ const Data = (props) => {
     },
     {
       id: 4,
+      like: 45,
+      views: 256,
       name: "Jung Ho-Yeon: Ойрын үед амьдралд минь ОЛОН үйл явдал зэрэг өрнөж байна",
       img: "https://otakukart.com/wp-content/uploads/2021/09/Jung-ho-Yeon-1200x900.jpg",
       type: "INTERVIEW",
@@ -30,6 +34,8 @@ const Data = (props) => {
     },
     {
       id: 1,
+      like: 55,
+      views: 12,
       name: "YOLO Comic №7: Амиар наадмааргүй байна",
       img: "https://www.yolo.mn/img/images/ck/2021/07/02/211081067_2586808924955345_9141607020974140275_n-122842-1969157511.jpeg",
       type: "COMIC",
@@ -37,6 +43,8 @@ const Data = (props) => {
     },
     {
       id: 2,
+      like: 5,
+      views: 28,
       name: "YOLO Comic №6: Күүл иргэн",
       img: "https://www.yolo.mn/img/images/ck/2021/06/04/K%20cool%20irgen-120049-35909505.jpeg",
       type: "COMIC",
@@ -50,6 +58,8 @@ const Data = (props) => {
     },
     {
       id: 3,
+      like: 77,
+      views: 39,
       name: "YOLO Comic №4: Нэг сумаар дөрвөн туулай",
       img: "https://www.yolo.mn/img/images/ck/2021/05/21/187950167_2558703731099198_8949246877320225002_n-142500-2026334592.jpeg",
       type: "COMIC",
@@ -57,6 +67,8 @@ const Data = (props) => {
     },
     {
       id: 4,
+      like: 68,
+      views: 82,
       name: "YOLO Comic №1: Гэхдээ чи маскгүй...",
       img: "https://www.yolo.mn/img/images/ck/2021/05/21/1-141304-1890519900.jpeg",
       type: "COMIC",
@@ -64,6 +76,8 @@ const Data = (props) => {
     },
     {
       id: 5,
+      like: 658,
+      views: 282,
       name: "YOLO Comic №3: Бодох хугацаа өгөөч...",
       img: "https://www.yolo.mn/img/images/ck/2021/05/21/183446977_2555476751421896_3211568411808554752_n-142152-1810582899.jpeg",
       type: "COMIC",
@@ -71,6 +85,8 @@ const Data = (props) => {
     },
     {
       id: 5,
+      like: 168,
+      views: 382,
       name: "Дэлхийн хамгийн үнэтэй ТАВАН муурны үүлдэр",
       img: "https://www.yolo.mn/img/images/ck/2021/08/18/Image4-135616-1185373347.jpeg",
       type: "STRANGE",
@@ -82,6 +98,8 @@ const Data = (props) => {
     },
     {
       id: 1,
+      like: 12,
+      views: 115,
       name: "Дуучин Dua Lipa арьс арчилгааны нууцаасаа хуваалцлаа",
       img: "https://www.yolo.mn/img/images/ck/2021/11/15/4-121002-709122410.jpeg",
       type: "ADVICE",
@@ -99,6 +117,8 @@ const Data = (props) => {
     },
     {
       id: 2,
+      like: 29,
+      views: 72,
       name: "Жүжигчин Song Hye Kyo-гийн гоо сайхны нууц бол СҮҮ",
       img: "https://www.yolo.mn/img/images/ck/2021/11/16/2-101149-1027566223.jpeg",
       type: "ADVICE",
@@ -112,6 +132,8 @@ const Data = (props) => {
     },
     {
       id: 3,
+      like: 35,
+      views: 112,
       name: "Бат бөх хосын харилцааны нууц: Хайрын таван хэл",
       img: "https://www.yolo.mn/img/images/ck/2021/10/27/image%2010-172732-1064306343.png",
       type: "ADVICE",
@@ -123,6 +145,8 @@ const Data = (props) => {
     },
     {
       id: 4,
+      like: 96,
+      views: 247,
       name: "Цар тахлаас үүдэн өсвөр насны хүүхдүүдийн дунд сэтгэлзүйн хямрал ихэсчээ",
       img: "https://www.yolo.mn/img/images/ck/2021/11/04/1-114358-1214940929.jpeg",
       type: "ADVICE",
@@ -152,6 +176,8 @@ const Data = (props) => {
     },
     {
       id: 5,
+      like: 45,
+      views: 489,
       name: "Шинэхэн найзаасаа заавал асуух 50 асуулт",
       img: "https://www.yolo.mn/img/images/ck/2021/11/11/1629994758-1620641708107159-1620481434-euphoria-season2-zendaya-142038-647258634.jpeg",
       type: "ADVICE",
@@ -184,6 +210,8 @@ const Data = (props) => {
     },
     {
       id: 1,
+      like: 98,
+      views: 82,
       name: "DEVITA LIFE токений анхдагч биржийн арилжаа (IEO)-ны тухай таны мэдэх хэрэгтэй зүйлс",
       img: "https://content.ikon.mn/news/2021/11/7/asyq66_unnamed_10__x974.jpg",
       type: "ENTERTAINMENT",
@@ -198,6 +226,8 @@ const Data = (props) => {
     },
     {
       id: 2,
+      like: 58,
+      views: 92,
       name: "А.Төгсбаярын найруулсан “Манан” кино энэ сарын 26-нд үзэгчдийн хүртээл болно",
       img: "https://www.yolo.mn/img/images/ck/2021/11/16/1-105810-700241627.jpeg",
       type: "ENTERTAINMENT",
@@ -205,6 +235,8 @@ const Data = (props) => {
     },
     {
       id: 3,
+      like: 68,
+      views: 82,
       name: "“Harry Potter”-ийн ТУСГАЙ дугаар ирэх сард олны хүртээл болно",
       img: "https://www.yolo.mn/img/images/ck/2021/11/17/harry_potter_and_the_sorcerers_stone_-_photofest_still_3_-_h_2020_-110902-1796219580.jpeg",
       type: "ENTERTAINMENT",
@@ -215,6 +247,8 @@ const Data = (props) => {
     },
     {
       id: 4,
+      like: 68,
+      views: 82,
       name: "T-Ara хамтлаг “TIKI TAKA” дуугаар эргэн ирлээ",
       img: "https://www.yolo.mn/img/images/ck/2021/11/17/2-101646-1816457198.jpeg",
       type: "ENTERTAINMENT",
@@ -224,6 +258,8 @@ const Data = (props) => {
     },
     {
       id: 5,
+      like: 658,
+      views: 582,
       name: "“Arcane” анимэйшн “Squid Game” цувралын амжилтыг ЭВДЛЭЭ",
       img: "https://www.yolo.mn/img/images/ck/2021/11/11/2-112246-425217559.jpeg",
       type: "ENTERTAINMENT",
@@ -232,6 +268,8 @@ const Data = (props) => {
     },
     {
       id: 1,
+      like: 54,
+      views: 454,
       name: "2018-2019 онд зарлагдаж буй гадаадын их, дээд сургуулиудын ТЭТГЭЛЭГ",
       img: "https://content.ikon.mn/news/2018/1/12/394c67_1608_special_TOTO_main_x974.jpg",
       type: "EDUCATION",
@@ -241,6 +279,8 @@ const Data = (props) => {
     },
     {
       id: 2,
+      like: 98,
+      views: 124,
       name: "IELTS-д гурван сарын дотор бие даан бэлдэх ҮНЭГҮЙ материал болон ерөнхий ТӨЛӨВЛӨГӨӨ",
       img: "https://content.ikon.mn/news/2018/3/12/60576d_0_FZn3PdyAww3DvuOO__x974.jpg",
       type: "EDUCATION",
@@ -256,6 +296,8 @@ const Data = (props) => {
     },
     {
       id: 3,
+      like: 23,
+      views: 69,
       name: "Ярих чадвараа сайжруулах ДОЛООН хялбар дасгал",
       img: "https://content.ikon.mn/news/2015/11/2/12964a_1_x974.jpg",
       type: "EDUCATION",
@@ -265,6 +307,8 @@ const Data = (props) => {
     },
     {
       id: 4,
+      like: 23,
+      views: 45,
       name: "Сурагчид ирэх сарын 20-ноос 2022 оны нэгдүгээр сарын 28-н хүртэл АМАРНА",
       img: "https://www.yolo.mn/img/images/ck/2021/10/19/1-152058-1386987805.png",
       type: "EDUCATION",
@@ -294,6 +338,8 @@ const Data = (props) => {
 
     {
       id: 1,
+      like: 23,
+      views: 63,
       name: "Монгол бахархлын өдөрт зориулсан 128 бөхийн барилдаан 12:00 цагт эхэлнэ",
       img: "https://content.ikon.mn/news/2016/12/29/5a043b_MPA_PHOTO_2016-8496_x974.jpg",
       type: "DEVELOPMENT",
@@ -303,6 +349,8 @@ const Data = (props) => {
     },
     {
       id: 2,
+      like: 26,
+      views: 45,
       name: "Дэлхийд өрсөлдөх оюуны спортын тамирчдыг тодруулна",
       img: "https://content.ikon.mn/news/2021/11/1/qu27r3_poster1_x974.jpg",
       type: "DEVELOPMENT",
@@ -313,6 +361,8 @@ const Data = (props) => {
     },
     {
       id: 3,
+      like: 12,
+      views: 85,
       name: "'Белград-2021' ДАШТ-д хүчээ сорих боксчид маргааш Европыг зорино",
       img: "https://content.ikon.mn/news/2021/10/15/87jy14_245968690_2129437367208081_5251681532060033359_n_x974.jpg",
       type: "DEVELOPMENT",
@@ -324,6 +374,8 @@ const Data = (props) => {
     },
     {
       id: 4,
+      like: 112,
+      views: 487,
       name: "YALE-ийн Их Сургуулийн хамгийн эрэлттэй 11 цахим хичээлийг ЭНДээс үз",
       img: "https://www.yolo.mn/img/images/ck/2021/07/01/_115785406_mediaitem115785327-nc-091217-1772873933.png",
       type: "DEVELOPMENT",
@@ -334,6 +386,8 @@ const Data = (props) => {
     },
     {
       id: 5,
+      like: 68,
+      views: 82,
       name: "Өглөө ЭРТ БОСОХ ёстой арван шалтгаан",
       img: "https://www.yolo.mn/img/images/ck/2021/07/07/casper-blog-hub-tablet-header-143655-1120881685.png",
       type: "DEVELOPMENT",
@@ -347,6 +401,8 @@ const Data = (props) => {
     },
     {
       id: 1,
+      like: 12,
+      views: 145,
       name: "'HAPPY ART'-тай дэлхийн брэндүүд",
       img: "https://content.ikon.mn/news/2021/10/21/tyvn3j__1_4__x974.jpg",
       type: "INTERVIEW",
@@ -356,6 +412,8 @@ const Data = (props) => {
     },
     {
       id: 2,
+      like: 774,
+      views: 4545,
       name: "Европын цахим кино наадам 2021 эхэллээ",
       img: "https://content.ikon.mn/news/2021/10/22/mlvhdx_1_Mo_x974.jpg",
       type: "INTERVIEW",
@@ -367,6 +425,8 @@ const Data = (props) => {
     },
     {
       id: 3,
+      like: 789,
+      views: 654,
       name: "Домогт хөгжимчид 'Jazz City Revival' фестивальд",
       img: "https://content.ikon.mn/news/2021/9/17/fi9gdq_1_x974.jpg",
       type: "INTERVIEW",
@@ -375,6 +435,8 @@ const Data = (props) => {
 
     {
       id: 3,
+      like: 78,
+      views: 56,
       name: "Сургуулийн сэтгэл зүйчдийн талаар чиний МЭДЭХ ЁСТОЙ бүхэн",
       img: "https://www.yolo.mn/img/content_image/210920211632194024_1848544720.jpeg",
       type: "INTERVIEW",
@@ -382,6 +444,8 @@ const Data = (props) => {
     },
     {
       id: 1,
+      like: 41,
+      views: 879,
       name: "TEDx Talks: Стресстэй хэрхэн НАЙЗЛАХ вэ?",
       img: "https://www.yolo.mn/img/images/ck/2021/10/04/image%202-112802-1378766026.jpeg",
       type: "STRANGE",
@@ -393,6 +457,8 @@ const Data = (props) => {
     },
     {
       id: 2,
+      like: 48,
+      views: 456,
       name: "Үр бүтээмжээр дүүрэн байхад чинь туслах ДОЛООН зөвлөгөө",
       img: "https://www.yolo.mn/img/images/ck/2019/10/25/1-144301-1065958187.jpeg",
       type: "STRANGE",
@@ -408,6 +474,8 @@ const Data = (props) => {
     },
     {
       id: 3,
+      like: 982,
+      views: 342,
       name: "Тэр чамд ТОХИРОХ эсэхийг илтгэх 50 асуулт",
       img: "https://www.yolo.mn/img/images/ck/2021/11/15/couple-compatability-1588195922-145848-1000096822.jpeg",
       type: "STRANGE",
@@ -442,6 +510,8 @@ const Data = (props) => {
     },
     {
       id: 4,
+      like: 678,
+      views: 852,
       name: "Дэлхийн хамгийн үнэтэй ТАВАН муурны үүлдэр",
       img: "https://www.yolo.mn/img/images/ck/2021/08/18/image2-135540-2006597729.jpeg",
       type: "STRANGE",

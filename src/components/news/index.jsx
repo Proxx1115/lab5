@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./style.css";
-let number = 57;
+let n = 0;
 export const News = (props) => {
   let link = `/${props.prop.type}/${props.prop.id}`;
   return (
     <Link to={link}>
-      <div className="news">
+      <div className={`news news${(n += 1)}`}>
         <img className="image" src={props.prop.img} alt="zurag" />
         <div className="hoverInfo">
           <i class="fab fa-facebook"></i>
@@ -27,13 +27,13 @@ export const News = (props) => {
                 src="https://www.yolo.mn/stat/app/img/redheart.png"
                 alt=""
               />
-              <div className="number">{(number += 23)}</div>
+              <div className="number">{props.prop.like}</div>
               <img
                 className="eye"
                 src="https://www.yolo.mn/stat/app/img/eye.png"
                 alt=""
               />
-              <div className="number">{(number += 7)}</div>
+              <div className="number">{props.prop.views}</div>
             </div>
             <div className="when">
               <p>ӨЧИГДӨР</p>

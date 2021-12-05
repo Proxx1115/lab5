@@ -26,6 +26,17 @@ html {
   padding: 0 2rem;
   justify-content: space-between;
 }
+.header-right {
+  display: flex;
+  flex: 4;
+  justify-content: flex-end;
+}
+.lg {
+  flex: 1;
+}
+.header {
+  margin-right: 1rem;
+}
 @media (max-width: 1200px) {
   div.menuu {
     width: 100%;
@@ -35,6 +46,12 @@ html {
 @media (max-width: 1000px) {
   div.menuu {
     width: 80%;
+    display: flex;
+  }
+}
+@media (max-width: 400px) {
+  div.menuu {
+    width: 100%;
     display: flex;
   }
 }

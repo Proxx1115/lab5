@@ -12,7 +12,11 @@ const Category = (property) => {
   });
   return (
     <div>
-      <Contents prop={filteredNews} />
+      {property.querry === "" ? (
+        <Contents prop={filteredNews} />
+      ) : (
+        <Contents prop={property.filNews} />
+      )}
     </div>
   );
 };
